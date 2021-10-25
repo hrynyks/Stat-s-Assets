@@ -1,0 +1,200 @@
+.contacts {
+    padding: 100px 0;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__subtitle {
+        font-size: toRem(24);
+        font-weight: 700;
+        color: #242424;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        color: #242424;
+        margin-bottom: 108px;
+        display: block;
+        text-align: center;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-around;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        font-size: toRem(20);
+        color: #242424;
+        padding-left: 38px;
+        position: relative;
+
+        &-link {
+            color: #242424;
+        }
+
+        &-adress::before {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/contacts-adress.svg);
+            width: 14px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &-phone::before {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/contacts-phone.svg);
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &-wa::before {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/contacts-wa.svg);
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &-skype::before {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/contacts-skype.svg);
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &-mail::before {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/contacts-mail.svg);
+            width: 20px;
+            height: 16px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        &-fb::before {
+            content: "";
+            position: absolute;
+            background: url(/src/assets/images/contacts-fb.svg);
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__content {
+        max-width: 420px;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+        border-radius: 6px;
+        padding: 50px 40px 70px;
+        position: relative;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 340px;
+        width: 100%;
+    }
+
+    &__input {
+        background-color: #fff;
+        border: 1px solid #D7D7D7;
+        border-radius: 4px;
+        padding: 10px 16px;
+        width: 100%;
+
+        &::placeholder {
+            font-size: toRem(14);
+            color: #A9A9A9;
+        }
+
+        &-3 {
+            height: 80px;
+            border: 1px solid #D7D7D7;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__btn {
+        font-size: toRem(18);
+        font-weight: 700;
+        line-height: 50px;
+        background-color: #2DA531;
+        border-radius: 6px;
+        width: 100%;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    &__img-1 {
+        position: absolute;
+        left: -100px;
+        top: -50px;
+        z-index: -1;
+
+        @include a (tablet) {
+            display: none;
+        }
+    }
+
+    &__img-2 {
+        position: absolute;
+        right: -100px;
+        top: -50px;
+        z-index: -1;
+
+        @include a (tablet) {
+            display: none;
+        }
+    }
+
+    &__img-3 {
+        position: absolute;
+        left: -100px;
+        bottom: 50px;
+        z-index: -1;
+
+        @include a (tablet) {
+            display: none;
+        }
+    }
+}

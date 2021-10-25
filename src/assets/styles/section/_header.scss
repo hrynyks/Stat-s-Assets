@@ -1,0 +1,115 @@
+.header {
+    padding: 15px 0;
+    background: rgba(33, 33, 33, 0.3);
+    box-shadow: 0px 4px 12px rgba(24, 9, 96, 0.1);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        @include a (tablet) {
+            flex-direction: column;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 20px;
+
+        @include a (tablet) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &-1 {
+            padding-right: 15px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: url(/src/assets/images/header-arrow.svg);
+                width: 10px;
+                height: 6px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include a (tablet) {
+                    top: 35%;
+                }
+            }
+        }
+
+        &-2 {
+            padding-right: 15px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: url(/src/assets/images/header-arrow.svg);
+                width: 10px;
+                height: 6px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include a (tablet) {
+                    top: 35%;
+                }
+            }
+        }
+
+        &-6 {
+            padding-right: 15px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                background: url(/src/assets/images/header-arrow.svg);
+                width: 10px;
+                height: 6px;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+
+                @include a (tablet) {
+                    top: 35%;
+                }
+            }
+        }
+
+        &-link {
+            font-weight: 700;
+            color: #fff;
+            white-space: nowrap;
+            padding-bottom: 3px;
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid #fff;
+            }
+        }
+    }
+
+    &__btn {
+        font-weight: 700;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #FFFFFF;
+        border-radius: 6px;
+        line-height: 42px;
+        width: 160px;
+    }
+}

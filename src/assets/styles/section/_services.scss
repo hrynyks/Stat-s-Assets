@@ -1,0 +1,98 @@
+.services {
+    padding: 120px 0 114px;
+
+    &__title {
+        margin-bottom: 25px;
+
+        &-sml {
+            font-family: 'Harabara', sans-serif;
+            font-size: toRem(24);
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #0D6EB7;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__descr {
+        line-height: 26px;
+        color: #242424;
+    }
+
+    &__game {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+        }
+
+        &-content {
+            max-width: 553px;
+            width: 100%;
+        }
+    }
+
+    &__sdk {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+        }
+
+        &-content {
+            max-width: 553px;
+            width: 100%;
+
+            @include a (tablet-xl) {
+                order: -1;
+            }
+        }
+    }
+
+    &__3d {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 40px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+        }
+
+        &-content {
+            max-width: 553px;
+            width: 100%;
+        }
+    }
+
+    &__vr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 40px;
+
+        @include a (tablet-xl) {
+            flex-direction: column;
+        }
+
+        &-content {
+            max-width: 553px;
+            width: 100%;
+
+            @include a (tablet-xl) {
+                order: -1;
+            }
+        }
+    }
+}

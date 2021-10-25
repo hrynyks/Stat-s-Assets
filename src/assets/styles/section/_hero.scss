@@ -1,0 +1,93 @@
+.hero {
+    background: url(/src/assets/images/hero-bg.jpg) no-repeat center/cover;
+    padding: 227px 0 278px;
+    position: relative;
+
+    @include a (tablet) {
+        padding: 450px 0 150px;
+    }
+
+    &__title {
+        font-family: 'Harabara', sans-serif;
+        font-size: toRem(44);
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+        color: #fff;
+        max-width: 550px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        line-height: 26px;
+        color: #fff;
+        max-width: 552px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__btn {
+        &-left {
+            font-weight: 700;
+            width: 160px;
+            line-height: 42px;
+            border: 2px solid #FFFFFF;
+            background-color: transparent;
+            border-radius: 6px;
+            color: #fff;
+        }
+
+        &-right {
+            font-weight: 700;
+            width: 160px;
+            line-height: 42px;
+            background: #06B25F;
+            border-radius: 6px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        right: 70px;
+        top: 166px;
+
+        @include a (tablet-xl) {
+            display: none;
+        }
+    }
+
+    &__items {
+        background-color: #fff;
+        box-shadow: 0px 2px 12px 1px rgba(29, 51, 107, 0.25);
+        border-radius: 3px;
+        width: 48px;
+        height: 192px;
+        position: absolute;
+        right: 0;
+        top: 409px;
+        z-index: 1;
+
+        @include a (tablet) {
+            display: none;
+        }
+    }
+
+    &__item {
+        border-bottom: 1px solid #194484;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 48px;
+    }
+
+
+}

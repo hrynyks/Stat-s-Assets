@@ -1,0 +1,113 @@
+.technologies {
+    padding-top: 109px;
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__descr {
+        max-width: 900px;
+        width: 100%;
+        margin: 0 auto 30px;
+        font-size: toRem(24);
+        line-height: 38px;
+        text-align: center;
+        color: #242424;
+
+        &-span-1 {
+            font-weight: 700;
+            color: #00A4E8;
+        }
+
+        &-span-2 {
+            font-weight: 700;
+            color: #194484;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+        @include a (mobile) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+
+    &__item {
+        width: 64px;
+        height: 64px;
+        text-align: center;
+        padding: 12px 0;
+        box-shadow: 0px 4px 12px rgba(41, 24, 111, 0.2);
+        border-radius: 16px;
+        margin-bottom: 30px;
+
+        &-1 {
+            background-color: #06B25F;
+        }
+
+        &-2 {
+            background-color: #276ED8;
+        }
+
+        &-3 {
+            background-color: #84B5FF;
+        }
+    }
+
+    &__subtitle {
+        font-size: toRem(24);
+        color: #242424;
+        display: block;
+        text-align: center;
+        margin-bottom: 120px;
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+        border-radius: 16px;
+        max-width: 900px;
+        width: 100%;
+        padding: 33px;
+        margin: 0 auto;
+
+        @include a (tablet) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__reviews {
+        display: flex;
+        align-items: center;
+        gap: 13px;
+
+        &-grade {
+            font-size: toRem(18);
+            font-weight: 600;
+            color: #242424;
+        }
+
+        &-number {
+            color: #242424;
+        }
+    }
+
+    &__btn {
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #06B25F;
+        color: #fff;
+        border-radius: 6px;
+        width: 200px;
+        line-height: 42px;
+    }
+}
